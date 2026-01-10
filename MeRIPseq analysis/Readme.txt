@@ -1,0 +1,1 @@
+MeRIP-seq data processing was conducted using the MeRIPseqPipe pipeline (https://github.com/canceromics/MeRIPseqPipe). Key software versions and parameters are provided in the Methods and Supplementary Materials. Additional code and configuration files are available upon request.

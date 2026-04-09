@@ -29,8 +29,8 @@ names(Type) <- colnames(data)
 plot_df$Type <- Type[plot_df$Sample]
 plot_df$Type <- factor(plot_df$Type, levels = unique(Type))
 plot_df$Type<-factor(plot_df$Type,
-                     levels = c("AAA",
-                                "Control"))
+                     levels = c("Control",
+                                "AAA"))
 levels(plot_df$Type)
 library(reshape2)
 library(ggplot2)
@@ -107,7 +107,7 @@ length(genes_m6A_sig)
 length(genes_target)
 expr_m6A <- t(data[genes_m6A_sig, , drop = FALSE])
 expr_target <- t(data[genes_target, , drop = FALSE])
-cor_mat <- cor(expr_m6A, expr_target, method = "pearson")
+cor_mat <- cor(expr_m6A, expr_target, method = "spearman")
 cor_p <- matrix(NA, nrow = ncol(expr_m6A), ncol = ncol(expr_target))
 rownames(cor_p) <- colnames(expr_m6A)
 colnames(cor_p) <- colnames(expr_target)
@@ -149,7 +149,7 @@ result_df <- result_df %>%
       TRUE ~ ""
     )
   )
-pdf("cor_pearson_significant_only.pdf", height = 5, width = 10)
+pdf("cor_pearson_significant_only2222.pdf", height = 5, width = 10)
 ht <- Heatmap(
   cor_mat,
   name = "Correlation",

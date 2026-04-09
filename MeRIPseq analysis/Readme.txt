@@ -1,1 +1,1 @@
-MeRIP-seq data processing was conducted using the MeRIPseqPipe pipeline (https://github.com/canceromics/MeRIPseqPipe). Key software versions and parameters are provided in the Methods and Supplementary Materials. Additional code and configuration files are available upon request.
+We gratefully acknowledge Wuhan SeqHealth Technology Co., Ltd. for their technical support in MeRIP-seq analysis. The process was conducted using the MeRIPseqPipe pipeline (https://github.com/canceromics/MeRIPseqPipe).

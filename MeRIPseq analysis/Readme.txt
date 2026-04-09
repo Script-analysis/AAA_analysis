@@ -1,1 +1,0 @@
-"MeRIP-seq data processing and analysis were performed by Wuhan SeqHealth Technology Co., Ltd., following the MeRIPseqPipe pipeline (https://github.com/canceromics/MeRIPseqPipe). Detailed information on software versions and parameters is provided in the Supplementary Methods."
